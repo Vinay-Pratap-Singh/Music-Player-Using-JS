@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6ebb309f55.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Music Player</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="music-card">
+        <!-- details of song will be displayed on top-->
+        <div class="details">
+          <h1 class="music-title"></h1>
+          <h3 class="music-description"></h3>
+          <img
+            src="./image/img1.jpg"
+            class="music-img"
+            width="120px"
+            height="120px"
+          />
+        </div>
+
+        <!-- forward play and backward option will be there -->
+        <div class="control-button">
+          <i class="fa-solid fa-backward" title="Prev" onclick="prevSong()"></i>
+          <i class="fa-solid fa-play" title="Play" onclick="playSong()"></i>
+          <i class="fa-solid fa-pause" title="Pause" onclick="playSong()"></i>
+          <i class="fa-solid fa-forward" title="Next" onclick="nextSong()"></i>
+        </div>
+
+        <!-- silde for music -->
+        <div class="song-time">
+          <p class="current-time">00 : 00</p>
+          <input type="range" min="1" max="100" value="0" class="song-slider slider" onchange="changeCurrentTime(this)"/>
+          <p class="total-time">00 : 00</p>
+        </div>
+
+        <!-- slide for music volume -->
+        <div class="volume-time">
+          <i class="fa-solid fa-volume-xmark" onclick="mute()"></i>
+          <input type="range" min="1" max="100" value="100" class="volume-slider slider" onchange="changeVolume(this)"/>
+          <i class="fa-solid fa-volume-high" onclick="unmute()"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./details.js"></script>
+  <script src="./script.js"></script>
+</html>

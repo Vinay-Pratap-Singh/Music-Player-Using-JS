@@ -1,0 +1,99 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* designing the card */
+.music-card {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  padding: 20px;
+  gap: 30px;
+}
+
+/* designing the card details */
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.music-title {
+  font-size: 18px;
+}
+
+.music-description {
+  text-align: center;
+  font-size: 12px;
+}
+
+.music-img {
+  border-radius: 50%;
+}
+
+/* desgining the card button */
+.control-button {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-pause {
+  display: none;
+}
+
+/* designing the music timer */
+.song-time {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.volume-time {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* designing the i elements */
+i {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+i:hover {
+  background-color: rgb(227, 226, 226);
+}
+
+/* designing the slider */
+.slider {
+  height: 8px;
+  cursor: pointer;
+}
